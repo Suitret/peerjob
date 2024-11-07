@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "peerjob_backend": {
+      "main": "src/peerjob_backend/main.mo",
+      "type": "motoko"
+    },
+    "peerjob_frontend": {
+      "dependencies": [
+        "peerjob_backend"
+      ],
+      "source": [
+        "src/peerjob_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
